@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Attractive Todo App</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <main id="app">
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a new task" aria-label="Task input" autocomplete="off">
+        <button onclick="addTask()" aria-label="Add Task"><i class="fas fa-plus"></i> Add Task</button>
+      </div>
+      <ul id="taskList" role="list" aria-live="polite" aria-atomic="true"></ul>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
